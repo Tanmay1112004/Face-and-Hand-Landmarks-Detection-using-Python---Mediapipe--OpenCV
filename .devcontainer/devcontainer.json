@@ -1,0 +1,9 @@
+{
+  "name": "Face-Hand-Landmarks (Python 3.11)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8501],
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}
